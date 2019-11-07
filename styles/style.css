@@ -50,10 +50,14 @@ h1::after {
   position: absolute;
   height: 100vh;
   right: 0;
+  top: 0;
 }
-.header-tree path {
+.header-tree {
   stroke-dashoffset: 1500px;
   stroke-dasharray: 1500px;
+  /* animation: path-in 10s forwards; */
+}
+.activate-tree {
   animation: path-in 10s forwards;
 }
 @keyframes path-in {
@@ -65,9 +69,15 @@ h1::after {
   }
 }
 main {
-  height: 100vh;
+  max-height: 0;
+  overflow:hidden;
+  /* padding-top: 250px; */
+  transition: max-height 5s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+  color: #19323c;
 }
-
+.extend-main {
+  max-height: 200vh;
+}
 .character {
   width: calc(3010px / 6);
   height: calc(1400px / 2);
@@ -111,3 +121,78 @@ main {
     background-position-x: calc(3010px / 6);
   }
 }
+
+
+.crop {
+  width: calc(501px/2);
+  height: calc(700px/2);
+  overflow: hidden;
+  background-color: #EF414C;
+  position: relative;
+  left: -50px;
+  top: 150px;
+  cursor: pointer;
+}
+
+.inner {
+  height: 700px;
+  width: calc(3010px / 2);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.inner:hover {
+  animation: character-sheet-anim-position 2s infinite steps(1) forwards;
+}
+
+@keyframes character-sheet-anim-position{
+  0% {
+    left: calc(0);
+    bottom: -350px;
+  }
+  8% {
+    left: calc(-250px);
+  }
+  16% {
+    left: calc(-250px * 2);
+  }
+  24% {
+    left: calc(-250px * 3);
+  }
+  32% {
+    left: calc(-250px * 4);
+  }
+  40% {
+    left: calc(-250px * 5);
+  }
+  48% {
+    left: 0;
+    bottom: 0;
+  }
+  56% {
+    left: calc(-250px);
+    /* bottom: 700px; */
+  }
+  64% {
+    left: calc(-250px * 2);
+    /* bottom: 700px; */
+  }
+  72% {
+    left: calc(-250px * 3);
+    /* bottom: 700px; */
+  }
+  80% {
+    left: calc(-250px * 4);
+    /* bottom: 700px; */
+  }
+  88% {
+    left: calc(-250px * 5);
+    /* bottom: 700px; */
+  }
+  96% {
+    left: 0;
+    bottom: -350px;
+  }
+}
+/* then create a mixin for creating an animation??? */

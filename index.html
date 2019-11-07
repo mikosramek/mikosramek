@@ -13,6 +13,11 @@
   <header>
     <div class="wrapper">
       <h1>Miko Sramek</h1>
+      <div class="crop">
+        <div class="inner">
+          <img src="./assets/spritesheet.png" alt="">
+        </div>
+      </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" class="header-tree"  viewBox="0 0 1132 1039">
       <g fill="none" fill-rule="evenodd" stroke="#19323C" stroke-width="3" transform="translate(-93)">
@@ -37,10 +42,28 @@
   <main>
     <div class="wrapper">
         <!-- 6 columns by 2 rows -->
-        <div class="character">
+        <!-- <div class="character">
           <div class="character-sheet"></div>
-        </div>
+        </div> -->
+        <h2>aaa</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quaerat laudantium distinctio nobis, ex sapiente sint animi aperiam autem suscipit dolorum quia nulla dolores ab reiciendis magnam! Iusto in deserunt asperiores consequatur aspernatur provident voluptates culpa eius nesciunt nobis iure nihil amet alias inventore assumenda commodi, temporibus tempora, aperiam accusamus. Expedita laudantium odit accusamus impedit maiores iure minima quo ipsa aut, maxime non architecto itaque in totam reprehenderit quibusdam! Perspiciatis aut eius dignissimos eos est voluptatem tenetur, delectus ex laboriosam sequi, deserunt minus quidem debitis iste. Cupiditate officia aliquam laborum aliquid vel iure libero perferendis asperiores, necessitatibus eum dolor repellendus accusamus non tenetur voluptates, magni delectus alias. Incidunt provident atque velit non temporibus quisquam facere? Soluta eligendi voluptas vel placeat explicabo quis perferendis optio obcaecati unde exercitationem corporis nostrum quaerat quam ex saepe, eveniet id, sint ducimus maxime. Rem placeat iure beatae voluptates? Tempore expedita dolores illum fuga repellendus hic error dolorem reprehenderit sed, aperiam odit quaerat ipsum. Esse iusto fuga quasi officiis, voluptate veniam iste aliquid eos modi in. Ullam odit maxime alias at eligendi? Ducimus ipsam cum incidunt, reiciendis illum at dolor alias, earum eveniet odit fugit vel impedit et id explicabo, quae velit quaerat voluptates a blanditiis ab beatae quam excepturi qui? Minus aspernatur numquam et nam, suscipit quisquam blanditiis quasi aut laudantium praesentium expedita repellat doloremque architecto natus ratione totam eius, iure, harum earum ab magni. Fugiat molestiae blanditiis obcaecati dolores. Unde facere, dignissimos a eius dicta quo quibusdam ullam cum cumque accusamus? Ad incidunt sunt a voluptatem fuga, nisi praesentium, unde animi quia nihil molestias debitis quaerat autem repellat rerum architecto dolorum labore, velit nesciunt suscipit? Saepe fugiat nihil neque, explicabo voluptates suscipit eligendi consequatur! Esse ab consequuntur fuga sed ut, earum nihil laborum. Distinctio sunt, quis beatae eum modi at reiciendis quae dolorem natus mollitia, est facere illum, tenetur provident nobis voluptas quod sapiente dicta! Quis facilis non iure veritatis, ex iusto corrupti deleniti commodi quibusdam sequi voluptatem sunt quasi doloremque unde dicta nulla. Quia neque deserunt qui minus. Veritatis beatae ea consequuntur culpa incidunt, iure, reiciendis nemo repudiandae, animi minus optio dignissimos quasi? Reiciendis, amet quaerat hic quisquam commodi quas molestiae aliquam eum adipisci dolores facilis excepturi aspernatur veritatis dignissimos veniam iure sint optio totam in corporis. Qui ipsa facere officiis illum aliquam praesentium repudiandae explicabo enim animi, earum nihil totam delectus quod corrupti iusto sequi quaerat in tempore ducimus ab, aliquid ullam ut? Asperiores eius recusandae iste obcaecati consequuntur doloremque eos quidem dolor eveniet esse molestias amet est vero nam tempora veritatis, suscipit itaque ipsum molestiae delectus atque! Impedit, doloribus non, autem minus aperiam ea neque harum dolorum molestiae ratione vel dolores optio? Velit sunt iure cumque molestiae eum quos praesentium tempora omnis necessitatibus quis tempore autem sapiente dignissimos veritatis consequatur temporibus sequi amet dolore recusandae optio vero, provident perspiciatis minima! Facilis laborum error delectus iusto recusandae amet, quibusdam, commodi illum labore nihil velit id adipisci totam, aperiam molestias! Magnam iusto commodi ad sint voluptatibus? Asperiores doloremque animi minima ad possimus! Assumenda!</p>
     </div>
   </main>
+
+
+  <!-- jQuery -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <!-- Load any other plugins here: -->
+  
+  
+  <!-- Main Script -->
+  <script>
+     $(function() {
+         $(".crop").click(function() {
+          $(".header-tree path").addClass("activate-tree");
+          $("main").addClass("extend-main");
+         });
+     });
+  </script>
 </body>
 </html>
