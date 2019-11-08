@@ -132,6 +132,7 @@ main {
   left: -50px;
   top: 150px;
   cursor: pointer;
+  z-index: 8;
 }
 
 .inner {
